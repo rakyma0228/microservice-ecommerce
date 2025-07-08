@@ -7,6 +7,7 @@ COPY account account
 COPY product product
 COPY order order
 COPY recommender recommender
+COPY payment payment
 COPY graphql graphql
 COPY pkg pkg
 RUN GO111MODULE=on go build -mod mod -o /go/bin/app ./graphql/cmd/graphql
